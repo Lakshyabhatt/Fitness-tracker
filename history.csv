@@ -12,15 +12,6 @@ Duration: 52.6s"
 Reps: 0
 Calories: 0.1
 Duration: 12.0s"
-
-2025-06-15T10:33:04.941489,1,0.4,12.0,"Workout completed!
-Reps: 1
-Calories: 0.4
-Duration: 12.0s"
-2025-06-15T10:35:19.462932,3,1.5,15.7,"Workout completed!
-Reps: 3
-Calories: 1.5
-Duration: 15.7s"
 2025-06-15T10:39:44.423005,2,1.0,16.4,"Workout completed!
 Reps: 6
 Calories: 3.0
@@ -37,14 +28,6 @@ Duration: 25.7s"
 Reps: 4
 Calories: 2.0
 Duration: 18.3s"
-2025-06-18T06:53:23.319205,6,3.0,13.3,"Workout completed!
-Reps: 6
-Calories: 3.0
-Duration: 13.3s"
-2025-06-18T06:55:33.883407,4,2.0,13.3,"Workout completed!
-Reps: 4
-Calories: 2.0
-Duration: 13.3s"
 2025-06-18T06:57:28.878064,1,0.5,6.5,"Workout completed!
 Reps: 1
 Calories: 0.5
@@ -89,3 +72,12 @@ Duration: 7.1s"
 Reps: 4
 Calories: 2.0
 Duration: 12.8s"
+
+2025-06-18T17:37:12.136061,1,0.3,8.5,"Workout completed!
+Reps: 1
+Calories: 0.3
+Duration: 8.5s"
+2025-06-18T17:38:10.770745,3,1.5,20.4,"Workout completed!
+Reps: 3
+Calories: 1.5
+Duration: 20.4s"

@@ -10,7 +10,6 @@ import threading
 import time
 import sys
 import logging # Import the logging module
-from utils import save_live_workout_data
 
 app = Flask(__name__, static_folder='frontend', static_url_path='')
 UPLOAD_FOLDER = 'uploads'
@@ -30,7 +29,7 @@ logger = logging.getLogger(__name__)
 
 # Initialize text-to-speech engine
 try:
-    engine = pyttsx3.init()
+   # engine = pyttsx3.init()
     engine.setProperty('rate', 150)
     engine.setProperty('volume', 1.0)
 except Exception as e:
@@ -388,8 +387,7 @@ if __name__ == '__main__':
     # Ensure the UPLOAD_FOLDER exists
     if not os.path.exists(UPLOAD_FOLDER):
         os.makedirs(UPLOAD_FOLDER)
-    
-    # Run the Flask app
-    port = int(os.environ.get('PORT', 5000))
-    app.run(debug=True, host='0.0.0.0', port=port)
+ 
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
 
