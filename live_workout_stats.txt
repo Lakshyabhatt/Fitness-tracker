@@ -1,0 +1,3 @@
+Reps: 4
+Calories: 2.0
+Duration: 12.8s

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AI Fitness Tracker🏋🏻</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class=""></i>🏋🏻Cloud Based - AI Fitness Tracker 🏋🏻</h1>
+            <p class="subtitle">Track your workouts with AI-powered analysis</p>
+        </header>
+
+        <div class="main-content">
+            <div class="card upload-section">
+                <div class="card-header">
+                    <i class="fas fa-upload"></i>
+                    <h2>Upload Workout Video📸</h2>
+                </div>
+                <div class="card-body">
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <div class="file-input-container">
+                            <input type="file" id="videoFile" accept="video/*" required>
+                            <label for="videoFile" class="file-input-label">
+                                <i class="fas fa-video"></i>
+                                <span>Choose Video File</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-play"></i> Analyze Video
+                        </button>
+                    </form>
+                    <div id="uploadProgress" class="progress-container" style="display: none;">
+                        <div class="progress-bar">
+                            <div id="uploadProgressBar" class="progress"></div>
+                        </div>
+                        <div id="uploadProgressText">0%</div>
+                    </div>
+                    <p id="uploadResult" class="result-message"></p>
+                </div>
+            </div>
+
+            <div class="card live-section">
+                <div class="card-header">
+                    <i class="fas fa-video"></i>
+                    <h2>Live Workout📸</h2>
+                </div>
+                <div class="card-body">
+                    <div class="workout-stats" id="liveWorkoutStats" style="display: none;">
+                        <div class="stat">
+                            <i class="fas fa-dumbbell"></i>
+                            <span id="repCount">0</span> Reps
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-fire"></i>
+                            <span id="calorieCount">0.0</span> Cal
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span id="durationCount">0.0</span>s
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button id="startButton" class="btn btn-success" onclick="startCamera()">
+                            <i class="fas fa-play"></i> Start Live Workout
+                        </button>
+                        <button id="stopButton" class="btn btn-danger" onclick="stopWorkout()" style="display: none;">
+                            <i class="fas fa-stop"></i> Stop Workout
+                        </button>
+                    </div>
+                    <div id="progressContainer" class="progress-container" style="display: none;">
+                        <div class="progress-bar">
+                            <div id="progressBar" class="progress"></div>
+                        </div>
+                        <div id="progressText">0%</div>
+                    </div>
+                    <p id="liveMessage" class="result-message"></p>
+                </div>
+            </div>
+
+            <div class="card history-section">
+                <div class="card-header">
+                    <i class="fas fa-history"></i>
+                    <h2>Workout History📒</h2>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="historyTable">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Reps</th>
+                                    <th>Calories</th>
+                                    <th>Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody id="historyBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 AI Fitness Tracker | Made with <i class="fas fa-heart"></i></p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
