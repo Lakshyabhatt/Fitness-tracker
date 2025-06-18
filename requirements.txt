@@ -10,5 +10,5 @@ pytest>=6.2.5
 python-jose>=3.3.0
 requests>=2.26.0
 pyttsx3>=2.90
-mediapipe>=0.10.0
+mediapipe==0.8.11
 setuptools>=65.5.1
