@@ -1,6 +1,6 @@
-# 💪 Cloud-Based AI Fitness Tracker
+# 💪 AI Fitness Tracker
 
-Welcome to the **Cloud-Based AI Fitness Tracker** by Team **NeuroFlex**!  
+Welcome to the **AI Fitness Tracker** by Team **NeuroFlex**!  
 This project uses **Computer Vision** and **AI** to analyze workouts from live camera or uploaded videos, estimate key fitness metrics, and provide real-time feedback — all accessible from a user-friendly web interface.
 
 ---
