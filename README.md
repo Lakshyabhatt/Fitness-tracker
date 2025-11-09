@@ -47,6 +47,7 @@ python main.py
 Go to your browser and open:
 http://localhost:5000
 
+
 📂 Project Structure
 
 ├── main.py                 # Flask backend
@@ -61,7 +62,9 @@ http://localhost:5000
 ├── requirements.txt
 └── README.md
 
+
 👨‍💻 Team NeuroFlex
+
 Lakshya Bhatt(Lead) – Backend Developer (Flask, AI integration)
 Prateek Panwar – Frontend Developer (UI design & responsiveness)
 Sarthak Krishali – Integrator & Tester (feature linking & QA)
